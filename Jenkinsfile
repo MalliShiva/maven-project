@@ -7,7 +7,7 @@ pipeline {
     stages{
         stage('Build'){
             steps {
-                bat 'mvn clean package'
+                bat 'mvn archetype:generate'
             }
             post {
                 success {
